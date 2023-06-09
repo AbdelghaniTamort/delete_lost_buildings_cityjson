@@ -1,7 +1,6 @@
 import geopandas as gpd
 import laspy
 import json
-from shapely.geometry import shape
 from shapely.geometry import Polygon
 from copy import deepcopy
 import pyogrio
