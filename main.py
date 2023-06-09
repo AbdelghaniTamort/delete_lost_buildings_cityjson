@@ -11,7 +11,7 @@ import pyogrio
 ''' to use this function one has to have a point cloud containing the buildings that were lost and a shapefile containing the 
     footprints of the buildings extracted from a cityjson model using the ciyjson loader plugin in qgis for example'''' 
 
-  def extracting_lost_footprints(fp, pc, threshold, disappeared_fp):
+ def extracting_lost_footprints(fp, pc, threshold, disappeared_fp):
     # read the shapefile containing footprints
     footprints = gpd.read_file(fp)
     footprints.to_crs("EPSG:28992")
